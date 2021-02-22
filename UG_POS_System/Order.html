@@ -2,9 +2,286 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ORDER</title>
+    <link rel="stylesheet" href="assest/css/bootstrap.css">
 </head>
+<header>
+    <nav id="nav-bar-main" class="navbar navbar-expand-md navbar-dark bg-primary sticky-top w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand font-weight-bold" href="#">UG COMPUTER & MOBILE CENTER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link active mt-1" aria-current="page" href="Home.html">HOME</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link active" href="Order.html">ORDER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mt-1" href="Item.html">ITEM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mt-1" href="Customer.html">CUSTOMER</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle mt-1" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            OTHER
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Employees</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active " href="#"><i class="fas fa-user-plus"></i>Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 <body>
+<section class=" mt-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8 bg-light border border-info">
+                <h1 class="mt-2" >My ORDER</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron mt-5 container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card border border-primary">
+                                <div class="card-header">Order Details</div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col mt-3">
+                                            <input type="text" class="form-control" id="orderDate">
+                                        </div>
+                                        <div class="col mt-3">
+                                            <input type="text" class="form-control" placeholder="Order Id" aria-label="Order Id">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <div class="card border border-primary">
+                                    <div class="card-header">Customer Details</div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end  ">
+                                                <a href="Customer.html" class="btn btn-outline-info col-12 col-xl-auto
+                                                mt-2 mt-xl-0 ml-0 ml-xl-2" tabindex="-1" role="button"
+                                                   aria-disabled="true">New Customer</a>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group form-inline mt-3">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Customer Id</option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col mt-3">
+                                                <input type="text" class="form-control" placeholder="Customer Name"
+                                                       aria-label="Customer Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-5">
+                                    <div class="card border border-primary" >
+                                        <div class="card-header">Item Select</div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Code</option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                    </select>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Item Name"
+                                                           aria-label="Item Name">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col mt-3">
+                                                    <input type="text" class="form-control" placeholder="Number Of Pieces"
+                                                           aria-label="Number Of Pieces">
+                                                </div>
+                                                <div class="col mt-3">
+                                                    <input type="text" class="form-control" placeholder="Unit Price"
+                                                           aria-label="Unit Price">
+                                                </div>
+                                                <div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-end">
+                                                    <button class="btn btn-outline-info col-12 col-xl-auto mt-2 mt-xl-0
+                                                    ml-0 ml-xl-2">Place Order</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-12">
+                            <table class="table mt-5 table-primary table-bordered border-dark">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Item Id</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Number Of Pieces</th>
+                                    <th scope="col">Unit Price</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">#</th>
+                                    <td>#</td>
+                                    <td>#</td>
+                                    <td>0.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">#</th>
+                                    <td>#</td>
+                                    <td>#</td>
+                                    <td>0.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Grand Total</td>
+                                    <td>0.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+</section>
+<script src="assest/js/bootstrap.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="mt-3">-->
+<!--    <input type="text" class="form-control" placeholder="Description" aria-label="Description">-->
+<!--</div>-->
+<!--<div class="col mt-3">-->
+<!--    <input type="text" class="form-control" placeholder="Number Of Pieces" aria-label="Number Of Pieces">-->
+<!--</div>-->
+<!--<div class="col mt-3">-->
+<!--    <input type="text" class="form-control" placeholder="Unit Price" aria-label="Unit Price">-->
+<!--</div>-->
+<!--<div class="col mt-3">-->
+<!--    <input type="text" class="form-control" placeholder="Grand Total" aria-label="Grand Total">-->
+<!--</div>-->
+<!--<section class="mt-4">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col border border-danger">-->
+<!--                <div class="col bg-info ">-->
+<!--                    <h1>Order Details</h1>-->
+<!--                </div>-->
+<!--                <label>Date :</label>-->
+<!--                <input type="date" class="form-control" id="orderDate">-->
+<!--                <div class="mt-3">-->
+<!--                    <input type="text" class="form-control" placeholder="Order Id" aria-label="Order Id">-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-1"></div>-->
+<!--            <div class="col btn-danger">-->
+<!--                as-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->

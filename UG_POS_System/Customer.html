@@ -6,42 +6,94 @@
     <title>Customer</title>
     <link rel="stylesheet" href="assest/css/bootstrap.css">
 </head>
+<header>
+    <nav id="nav-bar-main" class="navbar navbar-expand-md navbar-dark bg-primary sticky-top w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand font-weight-bold" href="#">UG COMPUTER & MOBILE CENTER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link active mt-1" aria-current="page" href="Home.html">HOME</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link active" href="Order.html">ORDER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mt-1" href="Item.html">ITEM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mt-1" href="Customer.html">CUSTOMER</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle mt-1" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            OTHER
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Employees</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active " href="#"><i class="fas fa-user-plus"></i>Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 <body>
 <section class="mt-4">
     <div class="container-fluid">
         <div class="row">
             <div class="col"></div>
-            <div class="col-8 bg-secondary">
+            <div class="col-8 bg-light border border-info">
                 <h1 class="mt-2" >CUSTOMER</h1>
             </div>
             <div class="col"></div>
         </div>
     </div>
 </section>
-<section class="mt-4">
+<section class="mt-5">
     <div class="container-fluid">
         <div class="row">
             <div class="col"></div>
             <div class="col-8">
-                <div class="mt-3">
-                    <input type="text" class="form-control" placeholder="Customer ID" aria-label="Customer ID">
-                </div>
-                <div class="mt-3">
-                    <input type="text" class="form-control" placeholder="Customer Name" aria-label="Customer Name">
-                </div>
-                <div class="mt-3">
-                    <input type="Addess" class="form-control"  placeholder="Address" aria-label="Address">
-                </div>
-                <div class="mt-3">
-                    <input type="text" class="form-control" placeholder="Phone No" aria-label="Phone No">
-                </div>
-                <div class="col mt-3">
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Email">
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
-                    <button class="btn btn-outline-primary me-md-2" type="button">SAVE</button>
-                    <button class="btn btn-outline-primary" type="button">UPDATE</button>
-                    <button class="btn btn-outline-primary" type="button">DELETE</button>
+                <div class="card-body bg-light border border-primary">
+
+                    <div class="mt-3">
+                        <input type="text" class="form-control" placeholder="Customer ID" aria-label="Customer ID">
+                    </div>
+                    <div class="mt-3">
+                        <input type="text" class="form-control" placeholder="Customer Name" aria-label="Customer Name">
+                    </div>
+                    <div class="mt-3">
+                        <input type="Addess" class="form-control"  placeholder="Address" aria-label="Address">
+                    </div>
+                    <div class="mt-3">
+                        <input type="text" class="form-control" placeholder="Phone No" aria-label="Phone No">
+                    </div>
+                    <div class="col mt-3">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <button class="btn btn-outline-primary me-md-2" type="button">SAVE</button>
+                        <button class="btn btn-outline-primary" type="button">UPDATE</button>
+                        <button class="btn btn-outline-primary" type="button">DELETE</button>
+                    </div>
                 </div>
             </div>
             <div class="col"></div>
@@ -54,7 +106,8 @@
             <div class="col"></div>
             <div class="col-8">
                 <form class="d-flex mt-5 ">
-                    <input class="form-control me-3 mt-5" type="Customer ID/Customer Name" placeholder="Customer ID/Customer Name" aria-label="Customer ID/Customer Name">
+                    <input class="form-control me-3 mt-5" type="Customer ID/Customer Name"
+                           placeholder="Customer ID/Customer Name" aria-label="Customer ID/Customer Name">
                     <button class="btn btn-outline-success mt-5" type="submit">Search</button>
                 </form>
                 <table class="table mt-4 table-primary table-bordered border-dark ">
